@@ -1,4 +1,115 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!-- Profile Image -->
+      <div id="main-profile-image">
+          <img src="/assets/profile.jpg" alt="Profile Image" />
+      </div>
+
+      <div class="outer-wrapper">
+
+          <!-- Main navigation -->
+          <nav class="navbar navbar-expand-md navbar-dark">
+
+                  <!-- Company name shown on mobile -->
+                  <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#">Personal Page</a>
+
+                  <!-- Mobile menu toggle -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- Main navigation items -->
+                  <div class="collapse navbar-collapse" id="mainNavbar">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                          </li>
+
+
+                           <li class="nav-item">
+                                  <a class="nav-link" href="examples.html">Style Examples</a>
+                          </li>
+
+
+                          <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                          </li>
+
+                          <li class="nav-item">
+                                  <a class="nav-link" href="#">Contact</a>
+                          </li>
+                      </ul>
+
+                  </div>
+
+
+
+          </nav>
+
+          <div class="inner-wrapper">
+
+              <!-- Header -->
+              <header class="d-none d-md-block">
+                  <h1>Personal Page</h1>
+                  <h2>A little bit about me</h2>
+              </header>
+
+
+              <!-- Main content area -->
+              <main>
+                  <article>
+                      <h2 class="article-title">Introduction to major</h2>
+
+
+                      <p>Welcome to major, a free CSS3 &amp; HTML5 responsive web template from <a href="https://zypopwebtemplates.com/" title="ZyPOP">ZyPOP</a>. This template is completely <strong>free</strong> to use permitting a link remains back to  <a href="https://zypopwebtemplates.com/" title="ZyPOP">https://zypopwebtemplates.com/</a>.</p>
+
+                      <p> Should you wish to use this template unbranded you can buy a template license from our website for 8.00 GBP, this will allow you remove all branding related to our site, for more information about this see below.</p>
+
+                      <p>This template has been tested in:</p>
+
+                      <ul>
+                          <li>Firefox</li>
+                          <li>IE / Edge</li>
+                          <li>Chrome</li>
+                          <li>Safari</li>
+                          <li>iOS / Android</li>
+                      </ul>
+
+                  </article>
+
+                  <article>
+
+                      <h3>Buy unbranded</h3>
+
+                      <p>Purchasing a template license for 8.00 GBP (at time of writing around 12 USD) gives you the right to remove any branding including links, logos and source tags relating to ZyPOP. As well as waiving the attribution requirement, your payment will also help us provide continued support for users as well as creating new web templates. Find out more about how to buy at the licensing page on our website which can be accessed at <a href="https://zypopwebtemplates.com/licensing" title="template license">https://zypopwebtemplates.com/licensing</a></p>
+
+                  </article>
+
+              </main>
+
+              <div class="social-icons text-center">
+                  <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-snapchat fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+              </div>
+
+
+              <!-- Footer -->
+              <footer class="footer">
+                      <p class="text-center">Free Website Template from <a href="https://zypopwebtemplates.com/">ZyPop</a>.</p>
+                      <p class="text-center"><a href="#">Back to top</a></p>
+              </footer>
+          </div>
+      </div>
+
+
+      <!-- Bootcamp JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 
 <% base_url = Rails.env.to_s == "development" ? "http://localhost:3000" : "https://staging.spotgini.com" %>
